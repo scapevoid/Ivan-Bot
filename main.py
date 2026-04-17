@@ -427,7 +427,6 @@ def callback_start(call: CallbackQuery):
             reply_markup=markup
         )
     if call.data == "start_filling":
-        bot.send_message(8128066387, f"{call.message.chat.username}, {call.message.chat.id} начал заполнять анкету")
         bot.delete_message(call.message.chat.id, call.message.id)
         infohandler4_01.infoblock6_3(call.message, bot)
     if call.data == "back1":
