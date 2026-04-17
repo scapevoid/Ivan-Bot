@@ -192,7 +192,11 @@ def start(message: Message):
 
 
 def write_to_excel(message):
+    if not os.path.exists(f"datausers/"):
+        os.makedirs(f"datausers/")
+        
     filename = f"datausers/{message.chat.id}.txt"
+
     reading_file = open(f"{path}/{message.chat.id}_id", "r", encoding="utf-8")
     data = reading_file.readline().replace("NULL", "Вопрос Пропущен").replace("%"," ").split(", ")
     with open(filename, "w", encoding="utf-8") as a:
