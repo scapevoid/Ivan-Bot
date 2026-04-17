@@ -1,2 +1,2 @@
 def pathreturn():
-    return r"/home/bot/remake (6)/remake (5)/remake/data/" # путь до даты
+    return r"" # путь до даты (создать папку в которой будет хранится дата)
