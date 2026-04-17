@@ -308,7 +308,6 @@ def callback_start(call: CallbackQuery):
                          "#стильжизнипредприниматель@ivandomrosrov – немного лайф-контента\n"
                          "#строймемы@ivandomrosrov – котики, шуточки и наш менеджер по красоте рассказывают о стройке без стресса и страданий",
                          parse_mode="HTML", reply_markup=markup)
-        bot.send_message(8128066387, f"{call.message.chat.username}, {call.message.chat.id} начал заполнять анкету")
         write_to_excel(call.message)
     # хандлим админку
     filepath = "datausers/"
